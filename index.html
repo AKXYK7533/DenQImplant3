@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DenQ Precision Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+        
+        <aside class="side-panel left-panel">
+            <img src="DenQ_Logo.png" alt="DenQ Logo" class="panel-logo">
+            <h3>Product Categories</h3>
+            <ul class="quick-links">
+                <li><span class="icon">🔩</span> Fixture Systems</li>
+                <li><span class="icon">🧰</span> Surgical Kits</li>
+                <li><span class="icon">🦷</span> Overdenture</li>
+                <li><span class="icon">💻</span> CAD/CAM Library</li>
+            </ul>
+        </aside>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                AI Specialist Support
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button" class="pink-btn">
+                    <span class="send-icon">▶</span>
+                </button>
+            </div>
+        </div>
+
+        <aside class="side-panel right-panel">
+            <h3>DenQ Manufacturing</h3>
+            <div class="info-card">
+                <p><strong>HQ:</strong> Busan, South Korea</p>
+                <p><strong>Focus:</strong> High-Precision Dental Components</p>
+            </div>
+
+            <div class="resource-card">
+                <h4>Catalog & Brochure</h4>
+                <p>Download our catalog and brochures for implant systems, abutments, Endo-Remover, Endo-Condenser and surgical kits.</p>
+                <div class="resource-links">
+                    <a href="DenQ_Catalog.pdf" target="_blank" class="resource-button">Download Catalog</a>
+                    <a href="DenQ_Brochure.pdf" target="_blank" class="resource-button secondary">Download Brochure</a>
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <p class="diagram-title">Customer Service</p>
+                [WhatsApp:+82 10 8210-9792 or Email: biz@denq.kr]
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal" style="display: none;">
+        <span class="modal-close">&times;</span>
+        <img id="modal-image" src="" alt="Product Image" class="modal-image-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <footer class="precision-footer">
+        <span>Precision Driven</span> | <span>AI Support</span> | <span class="location-bold">부산광역시</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
